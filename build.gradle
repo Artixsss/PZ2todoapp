@@ -7,8 +7,8 @@ plugins {
 group = 'org.example'
 version = '1.0-SNAPSHOT'
 
-sourceCompatibility = '23'
-targetCompatibility = '23'
+sourceCompatibility = '21'
+targetCompatibility = '21'
 mainClassName = 'org.example.TodoApp' // for 'application' plugin
 
 repositories {
