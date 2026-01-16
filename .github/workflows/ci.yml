@@ -37,4 +37,6 @@ jobs:
       - name: Get project version
         id: get_version
         run: |
-          VERSION=$(grep '^version=' gradle.properties | cu
+            VERSION=$(awk -F= '/^version=/{print $2}' gradle.properties)
+            echo "VERSION=$VERSION" >> "$GITHUB_OUTPUT"
+
